@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3eaed89783.js" crossorigin="anonymous"></script>
+    <title>Donut Clicker</title>
+    
+</head>
+
+
+
+<body>
+
+
+    <!-- drop down menu -->
+    <header>
+        <h1>Fred the Baker Baking Company</h1>
+        <div class='drop-down'>
+            <button class='drop-button'> <h3>Check It Out</h3> </button>
+            
+            <div class='drop-menu'>
+                <a href="#shop-info">About Fred</a>
+                <a href="https://orteil.dashnet.org/cookieclicker/" target = '_blank'></i> Our Inspiration <br>  
+                    <p id = 'warning'>
+                    WARNING: Highly addictive, click at your own risk     
+                    </p>
+                </a>
+                <a href="#mastermind">The Mastermind</a>
+
+            </div>
+
+        </div>
+    </header>
+
+    
+    
+    
+    <!-- interactive layout -->
+    <section class = 'layout'>
+        <div id='donut-maker'>
+            <h2>Click on the donut to start helping!</h2>
+            <h2 id='donut-count'>0</h2>
+            <div class='donut-container'>
+            <button id="donut-button" onclick='addDonut()'> <img src="images/pink.png" alt=""> </button>
+    
+            </div>
+        </div>
+    
+    
+        <div id="auto-clicker">
+            
+            <h3>Your Total Number of Auto Clickers:</h3>
+            <h2 id="auto-click-count"> 0</h2>
+    
+    
+            <button id="auto-button" onclick='addAutoClick()' disabled> Purchase Auto-Clicker</button>
+    
+    
+        </div>
+
+    </section>
+
+    <button id = 'reset' onclick=" location.reload()" id ="reset">I Want to Start from Scratch</button>
+
+
+    <!-- webpage reading -->
+    <article id="shop-info">
+        <h2>Why You're Here</h2>
+        <p>Hello and thank you for stopping by to help keep Fred's dream alive. You see, Fred has been running his donut
+            shop for quite some time now and he's ready to hang up the apron. However, Fred's love for donuts has not
+            dwindled in the slightest and this is where your assistance is needed! I've been contracted by Fred to seek
+            help in making donuts for his shop while he enjoys retirement and I'm going to make the process super
+            simple. Let's give him a hand!
+        </p> <br>
+        <!-- modal section -->
+    <button id = 'modal-button'>How to Play</button>
+        <div id = 'info-modal'>
+            <div class ='modal-content'>
+                <span class ='close'>&times;</span>
+                <p>In order to help make donuts, click anywhere on the pink donut image and watch the donut count go up! Fear not, it will get easier, after you make 100 donuts you can trade those in to purchase an auto clicker. This auto clicker will help you make 1 donut every second. There is currently no limit on how many auto clickers you can purchase, but keep in mind after the first Auto Clicker purchased, the price for each one will increase by 10%. <br>
+                *Refresh the page to get makin donuts!*</p>
+            </div>
+
+        </div>
+        
+
+    </article>
+
+
+
+    
+
+    <article>
+        <h2 id = 'mastermind'>The Creator</h2>
+        <p> Brandon works full-time at an Amazon warehouse. Click the icon to check out GitHub projects.
+        </p>
+        <a href="https://github.com/bcharney94" target = '_blank'><i class="fa fa-github" style="font-size:48px;color:#dd8cf3";></i></a>
+    </article>
+    
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- DONUT IMAGE CITATION 
+    
+    Created By: tati.dsgn
+LICENSE NUMBER:   C00A914A-9584-4D0A-A2E9-FB523A89A287
+https://www.vecteezy.com/ 
+-->

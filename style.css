@@ -1,0 +1,274 @@
+/* sheet styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+html {
+    font-size: 20px;
+    
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+body{
+    text-align: center;
+    max-width: auto;
+    margin: 20px auto 20px auto;
+    min-height: 100vh;
+    background-color: #FFDEE9;
+    background-image: linear-gradient(315deg, #f7bcd0 0%, #B5FFFC 50%, #e6b6f3 100%);
+}
+
+
+
+h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3rem;
+    background-image: url(board.jpg);
+}
+
+/* .background-container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.sprinkles{
+    position: relative; 
+    display: flex;
+
+}
+.sprinkles span{
+    position: relative;
+    width: 8px;
+    height: 30px;
+    background: blue;
+    margin: 0 4 px;
+    border-radius: 50% ;
+    box-shadow: 0 0 0 10px orangered,
+    0 0 50px green,
+    0 0 100px orangered;
+    animation: animate 15s linear infinite;
+    
+}
+.sprinkles span:nth-child(even){
+    background: black;
+    margin: 0 4 px;
+    border-radius: 50% ;
+    box-shadow: 0 0 0 10px yellowgreen,
+    0 0 50px violet,
+    0 0 100px yellowgreen;
+}
+
+@keyframes animate
+{
+    0%{
+        transform: translateY(100vh) scale(0);
+    } 
+
+/* tried styling */
+
+
+
+
+
+
+/* graphic positioning */
+.donut-container {
+    /* position: relative; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donut-container img {
+    width: 250px;
+    height: 250px;
+}
+
+
+/* big pink donut button */
+#donut-button {
+    /* position: relative; */
+    /* top: 50%;
+    left: 50%; */
+    /* padding: 15px; */
+
+    border: none;
+    background: none;
+}
+
+#donut-count{
+    text-align: center;
+}
+
+#donut-button:active {
+    transform: translateY(4px);
+}
+
+
+
+/* dropdown menu */
+.drop-button{
+    
+    background: #F3D9B1;
+    padding: 10px;
+    border: none;
+    border-bottom: solid;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    width: 225px;
+    
+}
+.drop-down{
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    
+}
+.drop-down h3{
+    font-size: 22px;
+}
+.drop-menu{
+    
+    display: none;
+    position: relative;
+    background: #f0dab9;
+    min-width: 100px;
+    padding: 8px;
+    box-shadow: inset;
+    border-radius: 15px;
+    border-bottom: solid;
+    
+}
+.drop-menu a{
+    color: black;
+    padding: 3px 5px 3px 5px;
+    text-decoration: none;
+    display: block;
+}
+.drop-down:hover .drop-menu {display: block;}
+
+.drop-menu a:hover {background-color:#f3ce94 ;}
+
+#warning{
+    color: red;
+    font-size: 14px;
+}
+
+
+
+/* interactive layout section */
+
+
+#donut-button:hover{
+    cursor: grab;
+}
+
+.layout{
+    border: double;
+    background: radial-gradient(#f7bcd0 0%, #B5FFFC 50%, #e6b6f3 100%);
+    margin: 25px auto 25px auto;
+    padding: 15px;
+    width: 600px;
+    height: auto;
+
+}
+
+.layout h2{
+    padding: 18px;
+}
+
+#auto-button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 200px;
+    height: 43px;
+    border-radius: 15px;
+    border-style: groove ;
+    background: linear-gradient(315deg, #f7bcd0 0%, #B5FFFC 50%, #e6b6f3 100%);
+
+}
+
+#auto-button:active {
+    transform: translateY(2px);
+}
+
+
+#shop-info{
+    max-width: 780px;
+    margin: 25px auto 35px auto;
+}
+ #shop-info h3{
+    margin-top: 30px;
+    padding: 30px;
+ }
+
+#auto-click-count, #donut-count{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#info-modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #f3ce94;
+}
+
+.modal-content{
+    background-color: #f0dab9;
+    margin: 25%, auto;
+    padding: 15px;
+    border: 2px solid;
+    width: 45%;
+}
+
+.close{
+    color: #fff;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus{
+color: #e6b6f3;
+text-decoration: none;
+cursor: pointer;
+}
+
+#reset{ 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background:linear-gradient(315deg, #e6b6f3 0%, #B5FFFC 50%, #f7bcd0 100%) ;
+    width: 275px;
+    height: 40px;
+    border-radius: 15px ;
+
+}
+
+#modal-button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight:bold;
+    font-size:18px;
+    color:#20bdb7;
+    width: 175px;
+    border:none;
+    background: none;
+    
+}
+
+button:hover{
+    cursor: pointer;
+
+    
+}
